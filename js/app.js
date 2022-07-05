@@ -36,10 +36,10 @@ else if (userWelcome && ((userGender === "female")|| (userGender === "Female")))
  // Phase 2
 
 var userExtraQuestions = confirm("Would you like to answer more questions?");
-var answersArray=[];
-var questionsArray=["Do you like javascript?","do you like css?","do you like html?"]
 
 if(userExtraQuestions){
+    var answersArray=[];
+    var questionsArray=["Do you like javascript?","do you like css?","do you like html?"]
     alert("Please answer with yes or no:")
 var firstQuestionAnswer = prompt(`${questionsArray[0]}`);
 (firstQuestionAnswer=="yes" || firstQuestionAnswer=="Yes")? answersArray.push(firstQuestionAnswer):
